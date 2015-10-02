@@ -17,7 +17,12 @@ local leftovers = ""
 
 codex_cards = json.decode(file_contents("codex.json"))
 
+function format_hero(card)
+  return "I'm iron man."
+end
+
 function format_card(card)
+  if card.type == "Hero" then return format_hero(card) end
   local str = card.name .. " - "
   if card.spec then
     str = str .. card.spec
