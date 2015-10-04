@@ -15,7 +15,17 @@ local can_join = false
 local joined = false
 local leftovers = ""
 
-codex_cards = json.decode(file_contents("codex.json"))
+codex_cards = {}
+filenames = {"red", "green", "purple", "neutral"}
+for _,name in pairs(filenames) do
+  local cards = json.decode(file_contents(name..".json"))
+  for _,card in pairs(cards) do
+    codex_cards[#codex_cards+1] = card
+  end
+end
+
+circled_digits = {[0]="⓪", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩",
+                           "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱", "⑲", "⑳",}
 
 function format_hero(card)
   return "I'm iron man."
@@ -40,7 +50,7 @@ function format_card(card)
     str = str .. " ◎ "
   end
   if card.cost then
-    str = str .. " (" .. card.cost .. "):"
+    str = str .. " " .. circled_digits[card.cost] .. " :"
   end
   if card.ATK then
     str = str .. " " .. card.ATK .. "/" .. card.HP
@@ -48,7 +58,7 @@ function format_card(card)
     str = str .. " " .. card.HP .. "HP"
   end
   local rules_text = ""
-  for i=1,3 do
+  for i=1,4 do
     if card["rules_text_"..i] then
       rules_text = rules_text .. " " .. card["rules_text_"..i]
     end
