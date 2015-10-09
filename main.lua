@@ -16,7 +16,7 @@ local joined = false
 local leftovers = ""
 
 codex_cards = {}
-filenames = {"red", "green", "purple", "neutral"}
+filenames = {"white", "blue", "black", "red", "green", "purple", "neutral"}
 for _,name in pairs(filenames) do
   local cards = json.decode(file_contents(name..".json"))
   for _,card in pairs(cards) do

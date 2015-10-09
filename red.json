@@ -380,6 +380,7 @@
         "subtype": "Burn",
         "cost": 2,
         "target_icon": true,
+        "rules_text_1": "Deal 3 damage to a unit or 2 damage to a building.",
         "sha1": "27d1b5a091055b3d24c33ab38c207bbdaa7fb97d"
     },
     {
@@ -392,6 +393,7 @@
         "subtype": "Burn",
         "cost": 3,
         "target_icon": true,
+        "rules_text_1": "Deal 3 damage divided as you choose among one, two, or three patrollers and/or buildings.",
         "sha1": "1faa25b1c35fb191965a5289601b012e595ce79b"
     },
     {
@@ -404,6 +406,7 @@
         "subtype": "Burn",
         "cost": 4,
         "target_icon": true,
+        "rules_text_1": "Deal 4 damage to a unit or hero or 3 damage to a building.",
         "sha1": "70eba8d2b9093d5367d60ab8b25975c65ee2acf6"
     },
     {
@@ -416,6 +419,7 @@
         "subtype": "Burn",
         "cost": 4,
         "target_icon": true,
+        "rules_text_1": "Deal 5 damage divides as you choose among any number of units, heroes, and/or buildings.",
         "sha1": "609ef77308d6c9f4f5ede8e4d40b3df4edd7628d"
     },
     {

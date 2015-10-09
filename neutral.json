@@ -283,6 +283,7 @@
         "HP": 4,
         "rules_text_1": "Your other units get +1 ATK.",
         "rules_text_2": "Your Virtuosos get +2/+1, instead.",
+        "pedantry": "Remove comma?",
         "sha1": "ed45be70419fe1cf1f923a39d3d688eb18d021f3"
     },
     {
@@ -298,7 +299,7 @@
         "tech_level": 2,
         "ATK": 3,
         "HP": 5,
-        "rules_text_1": "Your virtuosos cost 0 to play and gain \"⤵ → Deal 2 damage to a building.\"",
+        "rules_text_1": "Your virtuosos cost ⓪ to play and gain \"⤵ → Deal 2 damage to a building.\"",
         "sha1": "4caffa996ddd93cc25ac5bdaf186fd197dda353d"
     },
     {

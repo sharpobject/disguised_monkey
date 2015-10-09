@@ -411,6 +411,7 @@
         "cost": 6,
         "target_icon": false,
         "rules_text_1": "Forecast 3 (Starts off in the future, not in play. Put three time runes on this and remove one each upkeep. When you remove the last, it resolves.)",
+        "rules_text_2": "Take an extra turn after this one, then trash this card.",
         "sha1": "6ce466b80b64ab408d6b650f138dfe6a0cfb45e1"
     },
     {
