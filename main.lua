@@ -27,6 +27,30 @@ end
 circled_digits = {[0]="⓪", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩",
                            "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱", "⑲", "⑳",}
 
+local function levenshtein_distance(s, t)
+  s,t = procat(s), procat(t)
+  local m,n = #s, #t
+  local d = {}
+  for i=0,m do
+    d[i] = {}
+    d[i][0] = i
+  end
+  for j=1,n do
+    d[0][j] = j
+  end
+  for j=1,n do
+    for i=1,m do
+      if s[i] == t[j] then
+        d[i][j] = d[i-1][j-1]
+      else
+        d[i][j] = math.min(d[i-1][j]+1,
+                           d[i][j-1]+1, d[i-1][j-1]+1)
+      end
+    end
+  end
+  return d[m][n]
+end
+
 function format_hero(card)
   return "I'm iron man."
 end
@@ -50,7 +74,8 @@ function format_card(card)
     str = str .. " ◎ "
   end
   if card.cost then
-    str = str .. " " .. circled_digits[card.cost] .. " :"
+    --str = str .. " " .. circled_digits[card.cost] .. " :"
+    str = str .. " (" .. card.cost .. "):"
   end
   if card.ATK then
     str = str .. " " .. card.ATK .. "/" .. card.HP
@@ -72,13 +97,44 @@ function format_card(card)
   return str
 end
 
+function format_didyoumean(cards)
+  local str = "Did you mean "
+  if #cards == 2 then
+    str = str .. cards[1].name .. " or " .. cards[2].name .. "?"
+    return str
+  end
+  for i=1,#cards-1 do
+    str = str .. cards[i].name .. ", "
+  end
+  str = str .. " or " .. cards[#cards].name .. "?"
+end
+
 function handle_codex(reply_to, args)
   local name = table.concat(args):lower()
   for _,card in pairs(codex_cards) do
-    if card.name:gsub("%s+", ""):lower() == name then
+    if card.name:gsub('%W',''):lower() == name then
       TCP_sock:send("PRIVMSG "..reply_to.." :"..format_card(card).."\r\n")
       return
     end
+  end
+  local bests = {}
+  local best_score = 99999999
+  for _,card in pairs(codex_cards) do
+    local this_score = levenshtein_distance(card.name:gsub('%W',''):lower(), name)
+    if this_score < best_score then
+      best_score = this_score
+      bests = {card}
+    elseif this_score == best_score then
+      bests[#bests+1] = card
+    end
+  end
+  if #bests == 1 then
+    TCP_sock:send("PRIVMSG "..reply_to.." :"..format_card(bests[1]).."\r\n")
+    return
+  end
+  if #bests <= 5 then
+    TCP_sock:send("PRIVMSG "..reply_to.." :"..format_didyoumean(bests).."\r\n")
+    return
   end
 end
 
