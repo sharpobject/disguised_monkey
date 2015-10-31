@@ -107,6 +107,7 @@ function format_didyoumean(cards)
     str = str .. cards[i].name .. ", "
   end
   str = str .. " or " .. cards[#cards].name .. "?"
+  return str
 end
 
 function handle_codex(reply_to, args)
