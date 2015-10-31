@@ -184,7 +184,7 @@ while true do
     sent_nick = true
   end
   if can_join and not joined then
-    TCP_sock:send("JOIN :#disguised_dog\r\n")
+    TCP_sock:send("JOIN :#sirlin\r\n")
     joined = true
   end
   socket.sleep(1)
