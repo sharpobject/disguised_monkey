@@ -43,7 +43,7 @@ local function levenshtein_distance(s, t)
       if s[i] == t[j] then
         d[i][j] = d[i-1][j-1]
       else
-        d[i][j] = math.min(d[i-1][j]+3/8,
+        d[i][j] = math.min(d[i-1][j]+1,
                            d[i][j-1]+1, d[i-1][j-1]+1)
       end
     end
