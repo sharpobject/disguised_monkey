@@ -159,7 +159,7 @@
         "tech_level": 2,
         "ATK": 6,
         "HP": 5,
-        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits another patroller if possible, or any unit, hero, or building otherwise.)",
+        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits something else this could attack.)",
         "sha1": "1ab07bd270a92ec8f20be28fb1cb1a5ceb630ead"
     },
     {
@@ -347,7 +347,7 @@
         "tech_level": 2,
         "ATK": 3,
         "HP": 5,
-        "rules_text_1": "Anti-air (Can attack  fliers, but can ignore patrolling fliers. Deals combat damage to fliers when fighting them.)",
+        "rules_text_1": "Anti-air (Can attack fliers, but can ignore patrolling fliers. Deals combat damage to fliers it fights or that fly over this while it patrols.)",
         "sha1": "fd4465cf10890a3ed6a514c9ee421cf8e81746b7"
     },
     {
@@ -443,6 +443,7 @@
         "ATK": 2,
         "HP": 1,
         "rules_text_1": "Arrives: Deal 1 damage to a building. Repair 1 damage from another building.",
+        "rules_text_2": "Dies: Return Brick Thief to your hand.",
         "sha1": "9bda37e15db5c295321dc27d16a1568a862c493c"
     },
     {

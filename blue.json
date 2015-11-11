@@ -44,9 +44,10 @@
         "color": "Blue",
         "spec": "Law",
         "type": "Ultimate Spell",
-        "cost": 3,
+        "cost": 4,
         "target_icon": false,
-        "rules_text_1": "Destroy all tech 0, I, and II units. (Heroes aren't units. Tokens are tech 0.)",
+        "rules_text_1": "Your max level Law hero can cast this no matter when he arrived or maxed.",
+        "rules_text_2": "Destroy all tech 0, I, and II units. (Heroes aren't units. Tokens are tech 0.)",
         "sha1": "8f437980cb0403c18b4e0eeee6b8ef2dca1b797e"
     },
     {
@@ -190,7 +191,7 @@
         "subtype": "Buff Debuff",
         "cost": 1,
         "target_icon": true,
-        "rules_text_1": "Exhaust a unit or hero and put a +1/+1 rune on it. (Sideline it if it was patrolling.)",
+        "rules_text_1": "Exhaust a unit or non-Peace hero and put a +1/+1 rune on it. (Sideline it if it was patrolling.)",
         "rules_text_2": "Draw a card.",
         "sha1": "dc35422d986d840d3855d4404c6e20b157bf1228"
     },
@@ -217,6 +218,7 @@
         "cost": 3,
         "target_icon": true,
         "rules_text_1": "Deal 3 damage to a building.",
+        "pedantry": "Not Burn?",
         "sha1": "6cbc26dc71ddc228dda4368ad3b395d3bc10d1c4"
     },
     {
@@ -293,7 +295,7 @@
         "tech_level": 2,
         "ATK": 2,
         "HP": 2,
-        "rules_text_1": "Arrives: Put an insurance rune on a unit. When that insured unit dies, draw a card and gain gold equal to its gold cost.",
+        "rules_text_1": "Arrives: Put an insurance rune on a unit. When that insured unit dies, gain gold equal to its gold cost and draw a card.",
         "sha1": "e52f96d9d3b7308f3026506f27467d922f605246"
     },
     {
@@ -309,7 +311,7 @@
         "tech_level": 2,
         "ATK": 4,
         "HP": 6,
-        "rules_text_1": "Unstoppable (Can ignore patrollers when attacking.)",
+        "rules_text_1": "Unstoppable but can't patrol. (Can ignore patrollers when attacking.)",
         "rules_text_2": "Two Lives (If this would die, heal all damage on it and put a crumbling rune on it. While it has a crumbling rune, it can really die.)",
         "sha1": "414751c0d395a0b884f59e09ca4bd5f311cbb72d"
     },
@@ -371,7 +373,7 @@
         "subtype": "Debuff",
         "cost": 2,
         "target_icon": false,
-        "rules_text_1": "Silence all of an opponent's heroes. (They lose all abilities and can't cast spells until after that opponent's next turn.)",
+        "rules_text_1": "Silence an opponent. (Their heroes can't cast spells and lose all abilities until after that opponent's next turn.)",
         "sha1": "47f58e95654c1e98b73292a7f31b53644770e795"
     },
     {
@@ -397,7 +399,8 @@
         "subtype": "Debuff",
         "cost": 3,
         "target_icon": false,
-        "rules_text_1": "All non-legendary tech 0, I, and II units are Illusions. (Illusions die when they're ◎ by spells or abilities.)",
+        "rules_text_1": "Channeling (Stays in play. Sacrifice it when you lose your Truth hero.)",
+        "rules_text_2": "All tech 0, I, and II units are Illusions. (Illusions die when they're ◎ by spells or abilities.)",
         "sha1": "32f5b26df2e6ef2e6836791449363e8301542583"
     },
     {
@@ -459,7 +462,7 @@
         "tech_level": 2,
         "ATK": 3,
         "HP": 3,
-        "rules_text_1": "Your Illusion units get +1/+1 and are untargetable. (Can't be the ◎ of spells or abilities.)",
+        "rules_text_1": "Your Illusion units get +1/+1 and no longer die when they are ◎ by spells or abilities.",
         "sha1": "8e70975e713fd396f224e7ef04f5bf7fec0b0393"
     },
     {
