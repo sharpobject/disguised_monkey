@@ -192,6 +192,5 @@ while true do
     TCP_sock:send("JOIN :#disguised_dog\r\n")
     joined = true
   end
-  socket.sleep(1)
-  print("slept")
+  socket.select({TCP_sock}, {}, 1)
 end
