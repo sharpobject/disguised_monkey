@@ -17,17 +17,21 @@ local leftovers = ""
 
 codex_cards = {}
 filenames = {"white", "blue", "black", "red", "green", "purple", "neutral"}
+local used_names = {}
 for _,name in pairs(filenames) do
   local cards = json.decode(file_contents(name..".json"))
   for _,card in pairs(cards) do
-    codex_cards[#codex_cards+1] = card
+    if not used_names[card.name] then
+      codex_cards[#codex_cards+1] = card
+      used_names[card.name] = true
+    end
   end
 end
 
 circled_digits = {[0]="⓪", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩",
                            "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱", "⑲", "⑳",}
 
-local function levenshtein_distance(s, t)
+function levenshtein_distance(s, t)
   s,t = procat(s), procat(t)
   local m,n = #s, #t
   local d = {}
@@ -106,7 +110,7 @@ function format_didyoumean(cards)
   for i=1,#cards-1 do
     str = str .. cards[i].name .. ", "
   end
-  str = str .. " or " .. cards[#cards].name .. "?"
+  str = str .. "or " .. cards[#cards].name .. "?"
   return str
 end
 
