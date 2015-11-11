@@ -36,6 +36,7 @@
         "cost": 3,
         "target_icon": true,
         "rules_text_1": "Deal 3 damage to a patroller. If it dies from Shadow Blade, its controller discards a card at random.",
+        "pedantry": "Not Burn?",
         "sha1": "5608494592ee7b9b578de0af964f7881333bbfc4"
     },
     {
@@ -67,7 +68,7 @@
         "HP": 2,
         "rules_text_1": "Indestructible (If this would die, exhaust it instead. You can't sacrifice it.)",
         "rules_text_2": "Can't attack or patrol.",
-        "rules_text_3": "① → Until your next upkeep, Gargoyle isn't indestructible, gains flying, +3 ATK, and it can attack and patrol.",
+        "rules_text_3": "① → Until your next upkeep, Gargoyle isn't indestructible, gains flying, +3 ATK, and it can attack and patrol. Once-per-turn.",
         "sha1": "1217a71cd2265e86b362fc58c813878e47b19578"
     },
     {
@@ -83,7 +84,7 @@
         "tech_level": 1,
         "ATK": 4,
         "HP": 4,
-        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits another patroller if possible, or any unit, hero, or building otherwise.)",
+        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits something else this could attack.)",
         "rules_text_2": "You can't play tech II or III units.",
         "sha1": "66d200e03d8c841adbe8cfe2bdcd7fdaa5e09b0f"
     },
@@ -99,8 +100,8 @@
         "target_icon": false,
         "tech_level": 2,
         "ATK": 2,
-        "HP": 5,
-        "rules_text_1": "Whenever an opponent attack Voidblocker, they exhaust another of their units or heroes.",
+        "HP": 6,
+        "rules_text_1": "Whenever an opponent attacks Voidblocker, they exhaust another of their units or heroes.",
         "sha1": "1f33483808f28c8c4eacab508899a9f14691b229"
     },
     {
@@ -408,6 +409,7 @@
         "cost": 4,
         "target_icon": true,
         "rules_text_1": "Sacrifice a unit. If you do, destroy a tech 0, I, or II unit or hero.",
+        "pedantry": "Not Debuff?",
         "sha1": "eca32560b600ce5df2129793bd14d085417e33bc"
     },
     {
@@ -452,7 +454,7 @@
         "tech_level": 1,
         "ATK": 3,
         "HP": 3,
-        "rules_text_1": "Anti-air (Can attack fliers, but can ignore patrolling fliers. Deals combat damage to fliers when fighting them.)",
+        "rules_text_1": "Anti-air (Can attack fliers, but can ignore patrolling fliers. Deals combat damage to fliers it fights or that fly over this while it patrols.)",
         "rules_text_2": "Deals damage to units and heroes in the form of -1/-1 runes.",
         "sha1": "971060f239f08c0265eb7c7e8b55b35b9f4e81f0"
     },
@@ -583,7 +585,7 @@
         "color": "Black",
         "type": "Unit",
         "subtype": "Ghost",
-        "cost": 1,
+        "cost": 0,
         "target_icon": false,
         "tech_level": 0,
         "ATK": 1,
@@ -620,7 +622,7 @@
         "tech_level": 0,
         "ATK": 2,
         "HP": 1,
-        "rules_text_1": "Attacks: Deals damage to units and heroes in the form of -1/-1 runes.",
+        "rules_text_1": "Attacks: Gains armor piercing and deals damage to units and heroes in the form of -1/-1 runes.",
         "sha1": "284eecf3105b06ed78c263d17a9d820f682d4329"
     },
     {
@@ -651,7 +653,7 @@
         "tech_level": 0,
         "ATK": 3,
         "HP": 4,
-        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits another patroller if possible, or any unit, hero, or building otherwise.)",
+        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits something else this could attack.)",
         "rules_text_2": "Dies from combat damage: Sacifice all your units except for Demons.",
         "sha1": "602441a1dd7be5f8869b4406db040afd2d3e3890"
     },
@@ -678,7 +680,7 @@
         "cost": 2,
         "target_icon": false,
         "tech_level": 0,
-        "rules_text_1": "Your Skeletons have long-range and anti-air. (Defenders without long-range deal no damage to them when they attack. They can attack fliers, but can ignore patrolling fliers. They deal combat damage to fliers when fighting them.)",
+        "rules_text_1": "Your Skeletons have long-range and anti-air. (Defenders without long-range deal no damage to them when they attack. They can attack fliers, but can ignore patrolling fliers. They deal combat damage to fliers they fight or that fly over them while they patrol.)",
         "sha1": "dd68e6e2f16f8a7c0b5301bf49ae46b68c09aad2"
     },
     {

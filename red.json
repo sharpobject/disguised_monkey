@@ -20,7 +20,7 @@
         "type": "Spell",
         "cost": 3,
         "target_icon": false,
-        "rules_text_1": "Trash a worker or building card (not-addons), then trash this card. (Trashed cards are removed from the game, not discarded.)",
+        "rules_text_1": "Trash a worker or building card (not add-on), then trash this card. (Trashed cards are removed from the game, not discarded.)",
         "pedantry": "\"not-addons\" is awkward and not consistent with Assimilate",
         "sha1": "976b197834ee808e93ebbf383c8cd1b9b4f9f7e0"
     },
@@ -31,6 +31,7 @@
         "color": "Red",
         "spec": "Anarchy",
         "type": "Spell",
+        "subtype": "Summon",
         "cost": 4,
         "target_icon": false,
         "rules_text_1": "Summon two 3/1 blue Shark tokens with haste and ephemeral. (They can attack right away but die at end of turn.)",
@@ -44,7 +45,7 @@
         "color": "Red",
         "spec": "Anarchy",
         "type": "Ultimate Spell",
-        "cost": 5,
+        "cost": 3,
         "target_icon": false,
         "rules_text_1": "Destroy all units and heroes.",
         "sha1": "4da171499939ab502e461b7dea00c3e3d1d82e92"
@@ -78,7 +79,7 @@
         "tech_level": 1,
         "ATK": 3,
         "HP": 3,
-        "rules_text_1": "Attacks a patroller: Gunpoint Taxman gets the patrol zone bonus of his victim this combat and they don't.",
+        "rules_text_1": "Attacks a patroller: Gunpoint Taxman gets the patrol zone bonus of his victim this combat and they don't. (Scavenger and technician bonuses trigger on the death of the patroller, not the Taxman. He returns stolen armor after combat.)",
         "sha1": "4e3c82ffddc87645923e718fced49cfdfe577dc8"
     },
     {
@@ -189,7 +190,7 @@
         "color": "Red",
         "spec": "Blood",
         "type": "Spell",
-        "cost": 1,
+        "cost": 0,
         "target_icon": false,
         "rules_text_1": "If your hand is empty, trash this card and draw three cards. (You can only reshuffle once per main phase.)",
         "rules_text_2": "Discard your hand at the end of the main phase.",
@@ -205,7 +206,7 @@
         "subtype": "Debuff",
         "cost": 4,
         "target_icon": true,
-        "rules_text_1": "Gain control of a tech 0, I, or II unit until end of turn. It gains haste until end of turn.",
+        "rules_text_1": "Gain control of an opposing tech 0, I, or II unit until end of turn. Ready it and it gets haste until end of turn.",
         "sha1": "5c13fc741c34a18c6aee6108d723f5f57f615048"
     },
     {
@@ -316,7 +317,7 @@
         "ATK": 6,
         "HP": 2,
         "rules_text_1": "Haste, ephemeral",
-        "rules_text_2": "Overpower (Excess combat damage this would deal to a patroller hits another patroller if possible, or any unit, hero, or building otherwise.)",
+        "rules_text_2": "Overpower (Excess combat damage this would deal to a patroller hits something else this could attack.)",
         "sha1": "98be8664d838622454ce67939bbf511f88d6cadf"
     },
     {
@@ -332,8 +333,9 @@
         "tech_level": 2,
         "ATK": 8,
         "HP": 7,
-        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits another patroller if possible, or any unit, hero, or building otherwise.)",
-        "rules_text_2": "Upkeep: Sacrifice a worker then you may sacrifice Land Octopus.",
+        "rules_text_1": "Overpower (Excess combat damage this would deal to a patroller hits something else this could attack.)",
+        "rules_text_2": "Upkeep: Sacrifice two workers or Land Octopus.",
+        "rules_text_3": "Can't patrol.",
         "sha1": "30f98537de640c24691d5d1e378603c4cc4b483f"
     },
     {
@@ -417,7 +419,7 @@
         "spec": "Fire",
         "type": "Ultimate Spell",
         "subtype": "Burn",
-        "cost": 4,
+        "cost": 3,
         "target_icon": true,
         "rules_text_1": "Deal 5 damage divides as you choose among any number of units, heroes, and/or buildings.",
         "sha1": "609ef77308d6c9f4f5ede8e4d40b3df4edd7628d"
@@ -435,7 +437,7 @@
         "tech_level": 1,
         "ATK": 2,
         "HP": 2,
-        "rules_text_1": "Haste (Can attack and play exhaust abilities the turn he arrives.)",
+        "rules_text_1": "Haste (Can attack and play ⤵ abilities the turn he arrives.)",
         "rules_text_2": "⤵ → Deal 1 damage to a building.",
         "sha1": "5763beba0bf242608ef6226ee204adffcb834e64"
     },
@@ -485,7 +487,7 @@
         "ATK": 4,
         "HP": 3,
         "rules_text_1": "Long-range (Defenders without long-range deal no damage to this when it attacks.)",
-        "rules_text_2": "Attacks: Deal 3 damage to the opposing base.",
+        "rules_text_2": "Attacks: Deal 3 damage to that opponent's base.",
         "pedantry": "\"The opposing base\" -> \"That opponent's base\" (like Troq)",
         "sha1": "02e5a18c2eec328831c385137ad2791ff0ae910c"
     },
@@ -597,7 +599,7 @@
         "tech_level": 0,
         "ATK": 1,
         "HP": 1,
-        "rules_text_1": "Haste (Can attack and play exhaust abilities, if he had any, the turn he arrives.)",
+        "rules_text_1": "Haste (Can attack and play ⤵ abilities, if he had any, the turn he arrives.)",
         "sha1": "ce442c41014ccfc6ded330bee1624ef74e5f9912"
     },
     {
@@ -657,7 +659,7 @@
         "tech_level": 0,
         "ATK": 1,
         "HP": 2,
-        "rules_text_1": "Haste (Can attack and play exhaust abilities, if it had any, the turn it arrives.)",
+        "rules_text_1": "Haste (Can attack and play ⤵ abilities, if it had any, the turn it arrives.)",
         "rules_text_2": "+2 ATK when attacking buildings.",
         "rules_text_3": "Can't patrol",
         "sha1": "8b8320d375904f106edc213e724359af60d722ee"

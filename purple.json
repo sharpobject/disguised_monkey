@@ -48,7 +48,8 @@
         "subtype": "Bounce",
         "cost": 4,
         "target_icon": false,
-        "rules_text_1": "Return all tech 0, I, and II units to their owner's hands.",
+        "rules_text_1": "Your max level Past hero can cast this no matter when she arrived or maxed.",
+        "rules_text_2": "Return all tech 0, I, and II units to their owner's hands.",
         "pedantry": "owners'",
         "sha1": "64000a3247187d3c8b98e7fe30c6f3c043273ba5"
     },
@@ -157,11 +158,11 @@
         "color": "Purple",
         "spec": "Past",
         "type": "Building",
-        "cost": 4,
+        "cost": 5,
         "target_icon": false,
         "tech_level": 2,
         "HP": 2,
-        "rules_text_1": "Each player's workers produce a total of only ③ each upkeep.",
+        "rules_text_1": "Each player's workers can't produce more than ④ total during their upkeep.",
         "sha1": "86738956f0fa734ead1b74b387c9b895a3f1e182"
     },
     {
@@ -214,7 +215,7 @@
         "color": "Purple",
         "spec": "Present",
         "type": "Spell",
-        "cost": 3,
+        "cost": 4,
         "target_icon": true,
         "rules_text_1": "Ready one of your units. Opposing exhausted units don't ready during their next ready step.",
         "sha1": "2913e20fe10c895d942ebbd291365eb8342e58ab"
@@ -260,7 +261,8 @@
         "tech_level": 1,
         "ATK": 3,
         "HP": 3,
-        "rules_text_1": "Sparkshot (When attacking a patroller, deals 1 damage to an adjacent patroller.)",
+        "rules_text_1": "Sparkshot, anti-air",
+        "rules_text_2": "Prevent the first damage per turn that a spell or ability would deal to one of your patrollers.",
         "sha1": "70a64d7682e1b0ae5d8fdc834257e127e653a961"
     },
     {
@@ -340,8 +342,8 @@
         "cost": 5,
         "target_icon": true,
         "tech_level": 2,
-        "ATK": 1,
-        "HP": 1,
+        "ATK": 3,
+        "HP": 3,
         "rules_text_1": "Arrives: Put three time runes on this.",
         "rules_text_2": "Gets +1/+1 for each time rune on it.",
         "rules_text_3": "Remove a time rune → Deal 1 damage to a unit, hero, or building.",
@@ -360,7 +362,7 @@
         "tech_level": 3,
         "ATK": 8,
         "HP": 8,
-        "rules_text_1": "Before attacking: You may pay ⑧. If you do, disable up to eight units and/or heroes. (Exhaust them and they don't ready during their next ready step. Sideline them if they were patrolling.)",
+        "rules_text_1": "⑧, ⤵ → Ready Octavian and disable up to eight units and/or heroes. (Exhaust them and they don't ready during their next ready step. Sideline them if they were patrolling.)",
         "sha1": "8618bbd9afbab78b8d62c69692ef07013ca9eed7"
     },
     {
@@ -700,7 +702,7 @@
         "cost": 2,
         "target_icon": false,
         "rules_text_1": "Draw a card.",
-        "rules_text_2": "If you have any time runes, draw another card.",
+        "rules_text_2": "If you have 3 or more time runes, draw another card.",
         "rules_text_3": "If you have 10 or more time runes, draw another card.",
         "sha1": "ead6bfa9ce8ea3ca5df25a70586718f5fcf81ac0"
     },
