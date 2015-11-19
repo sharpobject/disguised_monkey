@@ -56,7 +56,33 @@ function levenshtein_distance(s, t)
 end
 
 function format_hero(card)
-  return "I'm iron man."
+  local str = card.name .. " - "
+  str = str .. card.spec .. " Hero - " .. card.type .. " "
+  str = str .. "(" .. card.cost .. "): "
+  str = str .. "1: " .. card.ATK_1 .. "/" .. card.HP_1 .. " "
+  if card.base_text_1 then
+    str = str .. card.base_text_1 .. " "
+  end
+  if card.base_text_2 then
+    str = str .. card.base_text_2 .. " "
+  end
+  str = str .. "/ " .. card.mid_level .. ": "
+  str = str .. card.ATK_2 .. "/" .. card.HP_2 .. " "
+  if card.mid_text_1 then
+    str = str .. card.mid_text_1 .. " "
+  end
+  if card.mid_text_2 then
+    str = str .. card.mid_text_2 .. " "
+  end
+  str = str .. "/ " .. card.max_level .. ": "
+  str = str .. card.ATK_3 .. "/" .. card.HP_3 .. " "
+  if card.max_text_1 then
+    str = str .. card.max_text_1 .. " "
+  end
+  if card.max_text_2 then
+    str = str .. card.max_text_2 .. " "
+  end
+  return str
 end
 
 function format_card(card)
