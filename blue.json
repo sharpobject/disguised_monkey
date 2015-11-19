@@ -1,18 +1,6 @@
 [
     {
         "filename": "law_spell_a.jpg",
-        "name": "Jurisdiction",
-        "starting_zone": "codex",
-        "color": "Blue",
-        "spec": "Law",
-        "type": "Spell",
-        "cost": 2,
-        "target_icon": false,
-        "rules_text_1": "Play any non-ultimate spell from your codex. (You still pay its cost to play it, then discard it.)",
-        "sha1": "94b98f5aaf0bf082f3a673eb5221181d407df5d4"
-    },
-    {
-        "filename": "law_spell_b.jpg",
         "name": "Injunction",
         "starting_zone": "codex",
         "color": "Blue",
@@ -25,7 +13,7 @@
         "sha1": "fdae1f6dd359a86a9bfea1e81f0245273a7ada9a"
     },
     {
-        "filename": "law_spell_c.jpg",
+        "filename": "law_spell_b.jpg",
         "name": "Community Service",
         "starting_zone": "codex",
         "color": "Blue",
@@ -38,6 +26,18 @@
         "sha1": "4999cbb11c250953d208d211dae4ca1e7b779b24"
     },
     {
+        "filename": "law_spell_c.jpg",
+        "name": "Jurisdiction",
+        "starting_zone": "codex",
+        "color": "Blue",
+        "spec": "Law",
+        "type": "Spell",
+        "cost": 2,
+        "target_icon": false,
+        "rules_text_1": "Play any non-ultimate spell from your codex. (You still pay its cost to play it, then discard it.)",
+        "sha1": "94b98f5aaf0bf082f3a673eb5221181d407df5d4"
+    },
+    {
         "filename": "law_spell_ult.jpg",
         "name": "Judgment Day",
         "starting_zone": "codex",
@@ -48,6 +48,7 @@
         "target_icon": false,
         "rules_text_1": "Your max level Law hero can cast this no matter when he arrived or maxed.",
         "rules_text_2": "Destroy all tech 0, I, and II units. (Heroes aren't units. Tokens are tech 0.)",
+        "pedantry": "typo",
         "sha1": "8f437980cb0403c18b4e0eeee6b8ef2dca1b797e"
     },
     {
@@ -218,7 +219,6 @@
         "cost": 3,
         "target_icon": true,
         "rules_text_1": "Deal 3 damage to a building.",
-        "pedantry": "Not Burn?",
         "sha1": "6cbc26dc71ddc228dda4368ad3b395d3bc10d1c4"
     },
     {

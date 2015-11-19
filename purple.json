@@ -217,7 +217,8 @@
         "type": "Spell",
         "cost": 4,
         "target_icon": true,
-        "rules_text_1": "Ready one of your units. Opposing exhausted units don't ready during their next ready step.",
+        "rules_text_1": "Ready one of your units.",
+        "rules_text_2": "Opposing exhausted units don't ready during their next ready step.",
         "sha1": "2913e20fe10c895d942ebbd291365eb8342e58ab"
     },
     {
@@ -260,7 +261,7 @@
         "target_icon": false,
         "tech_level": 1,
         "ATK": 3,
-        "HP": 3,
+        "HP": 2,
         "rules_text_1": "Sparkshot, anti-air",
         "rules_text_2": "Prevent the first damage per turn that a spell or ability would deal to one of your patrollers.",
         "sha1": "70a64d7682e1b0ae5d8fdc834257e127e653a961"
@@ -400,7 +401,6 @@
         "cost": 3,
         "target_icon": true,
         "rules_text_1": "Gain control of an upgrade, ongoing spell, or building card (not add-on).",
-        "pedantry": "building card (not add-on)",
         "sha1": "b31babffd20835fb771bc39c49c34dd286776b3f"
     },
     {
@@ -478,11 +478,10 @@
         "cost": 3,
         "target_icon": false,
         "tech_level": 2,
-        "ATK": 6,
+        "ATK": 0,
         "HP": 4,
         "rules_text_1": "Forecast 2 (Starts off in the future, not in play. Put two time runes on this and remove one each upkeep. When you remove the last, it arrives.)",
-        "rules_text_2": "Upkeep: Pay ① and discard a card or exhaust Reaver.",
-        "rules_text_3": "Unstoppable",
+        "rules_text_2": "①, ⤵, Discard a card → Choose one: Trash 2 workers. Deal 6 damage to up to 2 units and/or heroes.",
         "sha1": "b9bad0461e96fa306cf28755accfb5c2ebf1c9d7"
     },
     {
@@ -605,7 +604,7 @@
         "HP": 4,
         "rules_text_1": "Forecast 3 (Starts off in the future, not in play. Put three time runes on this and remove one each upkeep. When you remove the last, it arrives.)",
         "rules_text_2": "Haste (Can attack and play ⤵ abilities, if he had any, the turn he arrives.)",
-        "pedantry": "Plasmodium is male?? + Fix haste reminder text to not use symbol",
+        "pedantry": "Male plasmodium's",
         "sha1": "e0726f43a414f61096f8094641f15c881a2fba04"
     },
     {
