@@ -143,7 +143,7 @@ function handle_codex(reply_to, args)
   end
 end
 
-handle_msg = function(msg)
+function handle_msg(msg)
   parts = msg:split(" ")
   if parts[1] == "PING" then
     TCP_sock:send("PONG "..parts[2].."\r\n")
