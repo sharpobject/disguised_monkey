@@ -57,7 +57,7 @@ end
 
 function format_hero(card)
   local str = card.name .. " - "
-  str = str .. card.spec .. " Hero - " .. card.type .. " "
+  str = str .. card.spec .. " Hero - " .. card.subtype .. " "
   str = str .. "(" .. card.cost .. "): "
   str = str .. "1: " .. card.ATK_1 .. "/" .. card.HP_1 .. " "
   if card.base_text_1 then
