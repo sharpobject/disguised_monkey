@@ -97,6 +97,13 @@ function card_to_int_for_sort(card)
   end
 end
 
+function card_name_for_list(card)
+  if string.find(card.name, ",") then
+    return '"' .. card.name .. '"'
+  end
+  return card.name
+end
+
 function compare_cards(a,b)
   local na, nb = card_to_int_for_sort(a), card_to_int_for_sort(b)
   if na ~= nb then
@@ -113,15 +120,26 @@ function format_color(color)
     end
   end
   table.sort(deck, compare_cards)
-  local card_names = map(function(c) return c.name end, deck)
-  local ret = color..": "
+  local card_names = map(card_name_for_list, deck)
+  local ret = color .. ": "
   ret = ret .. table.concat(color_to_specs[color], ", ") .. ". "
   ret = ret .. "Starting deck: "
-  ret = ret .. table.concat(card_named, ", ") .. "."
+  ret = ret .. table.concat(card_names, ", ") .. "."
   return ret
 end
 
-function format_spec(card)
+function format_spec(spec)
+  local deck = {}
+  for _, card in pairs(codex_cards) do
+    if card.spec == spec then
+      deck[#deck + 1] = card
+    end
+  end
+  table.sort(deck, compare_cards)
+  local card_names = map(card_name_for_list, deck)
+  local ret = spec .. ": "
+  ret = ret .. table.concat(card_names, ", ") .. "."
+  return ret
 end
 
 function format_hero(card)
