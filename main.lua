@@ -30,9 +30,6 @@ for _,name in pairs(filenames) do
   local cards = json.decode(file_contents(name..".json"))
   for _,card in pairs(cards) do
     if not used_names[card.name] then
-      if card.spec then
-        specs[card.spec] = true
-      end
       codex_cards[#codex_cards+1] = card
       used_names[card.name] = true
     end
@@ -110,7 +107,7 @@ end
 
 function format_color(color)
   local deck = {}
-  for k,v in pairs(codex_cards) do
+  for _, card in pairs(codex_cards) do
     if card.starting_zone == "deck" and card.color == color then
       deck[#deck + 1] = card
     end
