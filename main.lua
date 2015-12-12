@@ -17,14 +17,32 @@ local leftovers = ""
 
 codex_cards = {}
 filenames = {"white", "blue", "black", "red", "green", "purple", "neutral", "heroes"}
+color_to_specs = {White={"Discipline","Ninjutsu","Strength"},
+                  Blue={"Law","Peace","Truth"},
+                  Black={"Demonology","Disease","Necromancy"},
+                  Red={"Anarchy","Blood","Fire"},
+                  Green={"Balance","Feral","Growth"},
+                  Purple={"Past","Present","Future"},
+                  Neutral={"Bashing","Finesse"}}
+
 local used_names = {}
 for _,name in pairs(filenames) do
   local cards = json.decode(file_contents(name..".json"))
   for _,card in pairs(cards) do
     if not used_names[card.name] then
+      if card.spec then
+        specs[card.spec] = true
+      end
       codex_cards[#codex_cards+1] = card
       used_names[card.name] = true
     end
+  end
+end
+
+for color, specs in pairs(color_to_specs) do
+  codex_cards[#codex_cards+1] = {type="Color", name=color}
+  for _, spec in pairs(specs) do
+    codex_cards[#codex_cards+1] = {type="Spec", name=spec}
   end
 end
 
@@ -53,6 +71,60 @@ function levenshtein_distance(s, t)
     end
   end
   return d[m][n]
+end
+
+function card_to_int_for_sort(card)
+  local ret = 0
+  if card.type == "Hero" then
+    ret = 0
+  elseif card.type == "Unit" or card.type == "Legendary Unit" then
+    ret = 100
+  elseif card.type == "Building" or card.type == "Legendary Building" then
+    ret = 200
+  elseif card.type == "Upgrade" or card.type == "Legendary Upgrade" then
+    ret = 300
+  elseif card.type == "Ultimate Spell" or card.type == "Ultimate Ongoing Spell" then
+    ret = 500
+  else
+    ret = 400
+  end
+  ret = ret + card.cost
+  if card.starting_zone == "deck" or card.starting_zone == "command" then
+    return ret
+  elseif card.starting_zone == "trash" then
+    return 9000 + ret
+  elseif card.tech_level == nil then
+    return 1000 + ret
+  else
+    return card.tech_level * 1000 + 1000 + ret
+  end
+end
+
+function compare_cards(a,b)
+  local na, nb = card_to_int_for_sort(a), card_to_int_for_sort(b)
+  if na ~= nb then
+    return na < nb
+  end
+  return a.name < b.name
+end
+
+function format_color(color)
+  local deck = {}
+  for k,v in pairs(codex_cards) do
+    if card.starting_zone == "deck" and card.color == color then
+      deck[#deck + 1] = card
+    end
+  end
+  table.sort(deck, compare_cards)
+  local card_names = map(function(c) return c.name end, deck)
+  local ret = color..": "
+  ret = ret .. table.concat(color_to_specs[color], ", ") .. ". "
+  ret = ret .. "Starting deck: "
+  ret = ret .. table.concat(card_named, ", ") .. "."
+  return ret
+end
+
+function format_spec(card)
 end
 
 function format_hero(card)
@@ -87,6 +159,8 @@ end
 
 function format_card(card)
   if card.type == "Hero" then return format_hero(card) end
+  if card.type == "Color" then return format_color(card.name) end
+  if card.type == "Spec" then return format_spec(card.name) end
   local str = card.name .. " - "
   if card.spec then
     str = str .. card.spec
