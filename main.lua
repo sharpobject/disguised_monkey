@@ -14,6 +14,7 @@ local sent_nick = false
 local can_join = false
 local joined = false
 local leftovers = ""
+local whatifs = json.decode(file_contents("whatif.json"))
 
 codex_cards = {}
 filenames = {"white", "blue", "black", "red", "green", "purple", "neutral", "heroes"}
@@ -45,7 +46,7 @@ end
 
 circled_digits = {[0]="⓪", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩",
                            "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱", "⑲", "⑳",}
-
+                           
 function levenshtein_distance(s, t)
   s,t = procat(s), procat(t)
   local m,n = #s, #t
@@ -258,6 +259,41 @@ function handle_codex(reply_to, args)
   end
 end
 
+function handle_whatif(reply_to)
+  local query = "What if "
+  local the = ""
+  local tokens = ""
+  local whatif = ""
+  local card = nil
+  while card == nil or card.type == "Color" or card.type == "Spec" or card.starting_zone == "worker" do 
+    card = codex_cards[math.random(#codex_cards)]
+  end
+  if card.color == "Neutral" and card.type == "Building" then 
+    the = "the " 
+  elseif card.tech_level == 0 and card.starting_zone == "trash" then
+    tokens = " tokens"
+  end
+  if string.match(card.type, "Unit") or card.type == "Hero" then
+     whatif = whatifs.guy[math.random(#whatifs.guy)] 
+  else 
+     whatif = whatifs.nonguy[math.random(#whatifs.nonguy)] 
+  end
+  if math.random(100) >= 90 then
+    whatif = whatif:gsub("?", ", but "..whatifs.buts[math.random(#whatifs.buts)])
+  end
+  while string.find(whatif, '<[XGECKT]>') do  
+    whatif = whatif:gsub("<X>", math.random(6))
+    whatif = whatif:gsub("<G>", circled_digits[math.random(6)])
+    whatif = whatif:gsub("<E>", whatifs.effects[math.random(#whatifs.effects)])
+    whatif = whatif:gsub("<C>", whatifs.costs[math.random(#whatifs.costs)])
+    whatif = whatif:gsub("<K>", whatifs.keywords[math.random(#whatifs.keywords)])
+    whatif = whatif:gsub("<T>", whatifs.targets[math.random(#whatifs.targets)])
+  end
+  query = query..the..card.name..tokens.." "..whatif
+  TCP_sock:send("PRIVMSG "..reply_to.." :"..query.."\r\n")
+  return
+end
+
 function handle_msg(msg)
   parts = msg:split(" ")
   if parts[1] == "PING" then
@@ -274,7 +310,11 @@ function handle_msg(msg)
       reply_to = parts[1]:sub(2):split("!")[1]
     end
     if cmd == ":!codex" then
-      handle_codex(reply_to, args)
+      if args[1] == "whatif" or args[1] == "brainstorm" then
+        handle_whatif(reply_to)
+      else
+        handle_codex(reply_to, args)
+      end
     end
   end
 end
