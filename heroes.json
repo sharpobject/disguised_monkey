@@ -1,6 +1,7 @@
 [
     {
         "filename": "discipline_hero.jpg",
+        "sirlins_filename": "0015_discipline_hero.jpg",
         "name": "Grave Stormborne",
         "starting_zone": "command",
         "color": "White",
@@ -23,6 +24,7 @@
     },
     {
         "filename": "ninjutsu_hero.jpg",
+        "sirlins_filename": "0016_ninjutsu_hero.jpg",
         "name": "Setsuki Hiruki",
         "starting_zone": "command",
         "color": "White",
@@ -36,7 +38,7 @@
         "mid_level": 4,
         "ATK_2": 2,
         "HP_2": 3,
-        "mid_text_1": "Attacks: Swift strike (Deals combat damage before units and heroes without swift strike.)",
+        "mid_text_1": "Attacks: Swift strike this turn. (Deals combat damage before units and heroes without swift strike.)",
         "max_level": 6,
         "ATK_3": 3,
         "HP_3": 4,
@@ -44,6 +46,7 @@
     },
     {
         "filename": "strength_hero.jpg",
+        "sirlins_filename": "0017_strength_hero.jpg",
         "name": "Garus Rook",
         "starting_zone": "command",
         "color": "White",
@@ -60,10 +63,11 @@
         "max_level": 8,
         "ATK_3": 4,
         "HP_3": 6,
-        "max_text_1": "Two Lives (If this would die, heal all damage on it and put a crumbling rune on it. While it has a crumbling rune, it can really die.)"
+        "max_text_1": "Two Lives (If this would die, heal all damage on it and put a crumbling rune on it instead. While it has a crumbling rune, it can really die.)"
     },
     {
         "filename": "law_hero.jpg",
+        "sirlins_filename": "0006_law_hero.jpg",
         "name": "Bigby Hayes",
         "starting_zone": "command",
         "color": "Blue",
@@ -85,6 +89,7 @@
     },
     {
         "filename": "peace_hero.jpg",
+        "sirlins_filename": "0007_peace_hero.jpg",
         "name": "General Onimaru",
         "starting_zone": "command",
         "color": "Blue",
@@ -106,6 +111,7 @@
     },
     {
         "filename": "truth_hero.jpg",
+        "sirlins_filename": "0008_truth_hero.jpg",
         "name": "Sirus Quince",
         "starting_zone": "command",
         "color": "Blue",
@@ -128,6 +134,7 @@
     },
     {
         "filename": "demonology_hero.jpg",
+        "sirlins_filename": "0009_demonology_hero.jpg",
         "name": "Vandy Anadrose",
         "starting_zone": "command",
         "color": "Black",
@@ -150,6 +157,7 @@
     },
     {
         "filename": "disease_hero.jpg",
+        "sirlins_filename": "0010_disease_hero.jpg",
         "name": "Orpal Gloor",
         "starting_zone": "command",
         "color": "Black",
@@ -157,7 +165,7 @@
         "type": "Hero",
         "subtype": "Plague Lord",
         "cost": 2,
-        "ATK_1": 2,
+        "ATK_1": 1,
         "HP_1": 3,
         "base_text_1": "Deals damage to units and heroes in the form of -1/-1 runes.",
         "mid_level": 4,
@@ -172,6 +180,7 @@
     },
     {
         "filename": "necromancy_hero.jpg",
+        "sirlins_filename": "0011_necromancy_hero.jpg",
         "name": "Garth Torken",
         "starting_zone": "command",
         "color": "Black",
@@ -189,10 +198,11 @@
         "max_level": 7,
         "ATK_3": 3,
         "HP_3": 4,
-        "max_text_1": "Max Level: You may put a tech I or II unit from your discard pile into play if you meet the tech reqs for it."
+        "max_text_1": "Max Level: You may put a tech I or II unit that costs ⑤ or less from your discard pile into play if you meet the tech reqs for it."
     },
     {
         "filename": "anarchy_hero.jpg",
+        "sirlins_filename": "0000_anarchy_hero.jpg",
         "name": "Captain Zane",
         "starting_zone": "command",
         "color": "Red",
@@ -203,18 +213,19 @@
         "ATK_1": 2,
         "HP_1": 2,
         "base_text_1": "Haste (Can attack and play ⤵ abilities the turn he arrives.)",
-        "mid_level": 3,
+        "mid_level": 4,
         "ATK_2": 3,
         "HP_2": 3,
-        "mid_text_1": "Whenever you kill a scavenger, get ①.",
-        "mid_text_2": "Whenever you kill a technician, draw a card.",
+        "mid_text_1": "Whenever Zane kills a scavenger, get ①.",
+        "mid_text_2": "Whenever Zane kills a technician, draw a card.",
         "max_level": 6,
         "ATK_3": 4,
         "HP_3": 4,
-        "max_text_1": "⤵ → Put a bomb in an empty patrol slot. It detonates and deals 3 damage to any unit or hero who enters it."
+        "max_text_1": "Max level: Shove a patroller to an empty slot in its patrol zone, then deal 1 damage to it. ◎"
     },
     {
         "filename": "blood_hero.jpg",
+        "sirlins_filename": "0001_blood_hero.jpg",
         "name": "Drakk Ramhorn",
         "starting_zone": "command",
         "color": "Red",
@@ -232,10 +243,11 @@
         "max_level": 6,
         "ATK_3": 3,
         "HP_3": 4,
-        "max_text_1": "The first unit you play each turn gets haste."
+        "max_text_1": "The first unit that arrives from your hand each turn gets haste."
     },
     {
         "filename": "fire_hero.jpg",
+        "sirlins_filename": "0002_fire_hero.jpg",
         "name": "Jaina Stormborne",
         "starting_zone": "command",
         "color": "Red",
@@ -257,6 +269,7 @@
     },
     {
         "filename": "balance_hero.jpg",
+        "sirlins_filename": "0003_balance_hero.jpg",
         "name": "Master Midori",
         "starting_zone": "command",
         "color": "Green",
@@ -269,14 +282,15 @@
         "mid_level": 5,
         "ATK_2": 3,
         "HP_2": 4,
-        "mid_text_1": "Your units with no abilities cost ① less to play and get +2/+2.",
+        "mid_text_1": "Your units with no abilities get +1/+1.",
         "max_level": 8,
         "ATK_3": 4,
         "HP_3": 5,
-        "max_text_1": "Flying"
+        "max_text_1": "During your turn: Flying"
     },
     {
         "filename": "feral_hero.jpg",
+        "sirlins_filename": "0004_feral_hero.jpg",
         "name": "Calamandra Moss",
         "starting_zone": "command",
         "color": "Green",
@@ -298,6 +312,7 @@
     },
     {
         "filename": "growth_hero.jpg",
+        "sirlins_filename": "0005_growth_hero.jpg",
         "name": "Argagarg Garg",
         "starting_zone": "command",
         "color": "Green",
@@ -319,6 +334,7 @@
     },
     {
         "filename": "past_hero.jpg",
+        "sirlins_filename": "0012_past_hero.jpg",
         "name": "Prynn Pasternaak",
         "starting_zone": "command",
         "color": "Purple",
@@ -342,6 +358,7 @@
     },
     {
         "filename": "present_hero.jpg",
+        "sirlins_filename": "0013_present_hero.jpg",
         "name": "Max Geiger",
         "starting_zone": "command",
         "color": "Purple",
@@ -359,10 +376,11 @@
         "max_level": 5,
         "ATK_3": 3,
         "HP_3": 4,
-        "max_text_1": "Max Level: You may trash a friendly unit then return it to play. It gains haste this turn."
+        "max_text_1": "Max Level: You may trash a friendly unit then return it to play. ◎"
     },
     {
         "filename": "future_hero.jpg",
+        "sirlins_filename": "0014_future_hero.jpg",
         "name": "Vir Garbarean",
         "starting_zone": "command",
         "color": "Purple",
@@ -377,14 +395,15 @@
         "mid_level": 5,
         "ATK_2": 3,
         "HP_2": 3,
-        "mid_text_1": "⤵ → Play the top card of your draw pile as if it were in your hand. (You still pay for it.)",
+        "mid_text_1": "⤵ → Play the top card of your draw pile. (You still pay for it and must meet the reqs for it.)",
         "max_level": 7,
         "ATK_3": 3,
         "HP_3": 5,
-        "max_text_1": "Max Level: Summon a 6/7 purple Mech token with forcast 2 that's untargetable. (It will arrive in two turns.)"
+        "max_text_1": "Max Level: Summon a 6/7 purple Mech token with forecast 2 that's untargetable. (It will arrive in two turns.)"
     },
     {
         "filename": "bashing_hero.jpg",
+        "sirlins_filename": "0020_bashing_hero.jpg",
         "name": "Troq Bashar",
         "starting_zone": "command",
         "color": "Neutral",
@@ -405,6 +424,7 @@
     },
     {
         "filename": "finesse_hero.jpg",
+        "sirlins_filename": "0021_finesse_hero.jpg",
         "name": "River Montoya",
         "starting_zone": "command",
         "color": "Neutral",
@@ -417,7 +437,7 @@
         "mid_level": 3,
         "ATK_2": 2,
         "HP_2": 4,
-        "mid_text_1": "⤵ → Sideline a tech 0 or I patroller. (Move it out of the patrol zone.) ◎",
+        "mid_text_1": "⤵ → Sideline a tech 0 or tech I patroller. (Move it out of the patrol zone.) ◎",
         "max_level": 5,
         "ATK_3": 3,
         "HP_3": 4,

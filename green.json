@@ -1,6 +1,7 @@
 [
     {
         "filename": "balance_spell_a.jpg",
+        "sirlins_filename": "0010_moments_peace.jpg",
         "name": "Moment's Peace",
         "starting_zone": "codex",
         "color": "Green",
@@ -8,13 +9,13 @@
         "type": "Spell",
         "cost": 2,
         "target_icon": false,
-        "rules_text_1": "Units can't attack or deal combat damage until your next turn.",
-        "rules_text_2": "Your units can't patrol this turn.",
+        "rules_text_1": "Until your next turn, your units can't patrol and opposing units can't attack you.",
         "flavor_text": "The air was still. A tranquil energy surrounded them. They laid down their weapons, even though it seemed unwise.",
         "sha1": "1eeaeba7c4cc457ade50324253275a4763d9a62b"
     },
     {
         "filename": "balance_spell_b.jpg",
+        "sirlins_filename": "0011_nature_reclaims.jpg",
         "name": "Nature Reclaims",
         "starting_zone": "codex",
         "color": "Green",
@@ -27,6 +28,7 @@
     },
     {
         "filename": "balance_spell_c.jpg",
+        "sirlins_filename": "0012_circle_of_life.jpg",
         "name": "Circle of Life",
         "starting_zone": "codex",
         "color": "Green",
@@ -41,13 +43,15 @@
     },
     {
         "filename": "balance_spell_ult.jpg",
+        "sirlins_filename": "0013_final_showdown.jpg",
         "name": "Final Showdown",
         "starting_zone": "codex",
         "color": "Green",
         "spec": "Balance",
         "type": "Ongoing Ultimate Spell",
+        "subtype": "Buff",
         "cost": 3,
-        "target_icon": false,
+        "target_icon": true,
         "rules_text_1": "Attach to your Balance hero.",
         "rules_text_2": "He gets +3/+3, readiness, resist 1, and draws a card when he attacks.",
         "rules_text_3": "Summon two 3/3 green Hunter tokens with anti-air for an opponent, so that it's fair.",
@@ -55,6 +59,7 @@
     },
     {
         "filename": "balance_tech1_a.jpg",
+        "sirlins_filename": "0022_gemscout_owl.jpg",
         "name": "Gemscout Owl",
         "starting_zone": "codex",
         "color": "Green",
@@ -66,14 +71,15 @@
         "tech_level": 1,
         "ATK": 0,
         "HP": 1,
-        "rules_text_1": "Flying",
-        "rules_text_2": "Can't attack.",
+        "rules_text_1": "Flying but can't attack.",
+        "rules_text_2": "Resist 1",
         "rules_text_3": "Upkeep: Gain ①",
         "flavor_text": "These owls can spot a mouse a mile away and shiny treasures from two.",
         "sha1": "500a53261ca66c5c4a11dec0972090f87e2e931b"
     },
     {
         "filename": "balance_tech1_b.jpg",
+        "sirlins_filename": "0023_tiny_basilisk.jpg",
         "name": "Tiny Basilisk",
         "starting_zone": "codex",
         "color": "Green",
@@ -92,6 +98,7 @@
     },
     {
         "filename": "balance_tech2_a.jpg",
+        "sirlins_filename": "0028_chameleon.jpg",
         "name": "Chameleon",
         "starting_zone": "codex",
         "color": "Green",
@@ -109,6 +116,7 @@
     },
     {
         "filename": "balance_tech2_b.jpg",
+        "sirlins_filename": "0029_fairie_dragon.jpg",
         "name": "Fairie Dragon",
         "starting_zone": "codex",
         "color": "Green",
@@ -127,6 +135,7 @@
     },
     {
         "filename": "balance_tech2_c.jpg",
+        "sirlins_filename": "0030_dothram_horselord.jpg",
         "name": "Dothram Horselord",
         "starting_zone": "codex",
         "color": "Green",
@@ -145,6 +154,7 @@
     },
     {
         "filename": "balance_tech2_d.jpg",
+        "sirlins_filename": "0031_wandering_mimic.jpg",
         "name": "Wandering Mimic",
         "starting_zone": "codex",
         "color": "Green",
@@ -162,6 +172,7 @@
     },
     {
         "filename": "balance_tech2_e.jpg",
+        "sirlins_filename": "0032_potent_basilisk.jpg",
         "name": "Potent Basilisk",
         "starting_zone": "codex",
         "color": "Green",
@@ -180,6 +191,7 @@
     },
     {
         "filename": "balance_tech3.jpg",
+        "sirlins_filename": "0043_tyrannosaurus_rex.jpg",
         "name": "Tyrannosaurus Rex",
         "starting_zone": "codex",
         "color": "Green",
@@ -198,6 +210,7 @@
     },
     {
         "filename": "feral_spell_a.jpg",
+        "sirlins_filename": "0014_ferocity.jpg",
         "name": "Ferocity",
         "starting_zone": "codex",
         "color": "Green",
@@ -212,6 +225,7 @@
     },
     {
         "filename": "feral_spell_b.jpg",
+        "sirlins_filename": "0015_behind_the_ferns.jpg",
         "name": "Behind the Ferns",
         "starting_zone": "codex",
         "color": "Green",
@@ -226,13 +240,14 @@
     },
     {
         "filename": "feral_spell_c.jpg",
+        "sirlins_filename": "0016_murkwood_allies.jpg",
         "name": "Murkwood Allies",
         "starting_zone": "codex",
         "color": "Green",
         "spec": "Feral",
         "type": "Spell",
         "subtype": "Summon",
-        "cost": 4,
+        "cost": 5,
         "target_icon": false,
         "rules_text_1": "Boost ④ (You may pay an additional ④ when you play this to get the boost effect.)",
         "rules_text_2": "Choose one: Summon a 4/4 green Beast token; or summon four 1/1 green Frog tokens.",
@@ -242,6 +257,7 @@
     },
     {
         "filename": "feral_spell_ult.jpg",
+        "sirlins_filename": "0017_feral_strike.jpg",
         "name": "Feral Strike",
         "starting_zone": "codex",
         "color": "Green",
@@ -256,6 +272,7 @@
     },
     {
         "filename": "feral_tech1_a.jpg",
+        "sirlins_filename": "0024_huntress.jpg",
         "name": "Huntress",
         "starting_zone": "codex",
         "color": "Green",
@@ -273,6 +290,7 @@
     },
     {
         "filename": "feral_tech1_b.jpg",
+        "sirlins_filename": "0025_centaur.jpg",
         "name": "Centaur",
         "starting_zone": "codex",
         "color": "Green",
@@ -289,6 +307,7 @@
     },
     {
         "filename": "feral_tech2_a.jpg",
+        "sirlins_filename": "0033_stalking_tiger.jpg",
         "name": "Stalking Tiger",
         "starting_zone": "codex",
         "color": "Green",
@@ -306,6 +325,7 @@
     },
     {
         "filename": "feral_tech2_b.jpg",
+        "sirlins_filename": "0034_predator_tiger.jpg",
         "name": "Predator Tiger",
         "starting_zone": "codex",
         "color": "Green",
@@ -318,11 +338,12 @@
         "ATK": 4,
         "HP": 4,
         "rules_text_1": "Predator Tiger is unstoppable by tech 0 units. (Can ignore tech 0 patrollers when attacking.)",
-        "rules_text_2": "Whenever Predator Tiger deals combat damage to a base, destroy a worker at that base.",
+        "rules_text_2": "Whenever Predator Tiger deals combat damage to a base, trash a worker at that base.",
         "sha1": "262a40b1af18c348d6e4a572b5aa539822e18b77"
     },
     {
         "filename": "feral_tech2_c.jpg",
+        "sirlins_filename": "0035_barkcoat_bear.jpg",
         "name": "Barkcoat Bear",
         "starting_zone": "codex",
         "color": "Green",
@@ -341,6 +362,7 @@
     },
     {
         "filename": "feral_tech2_d.jpg",
+        "sirlins_filename": "0036_rampaging_elephant.jpg",
         "name": "Rampaging Elephant",
         "starting_zone": "codex",
         "color": "Green",
@@ -358,6 +380,7 @@
     },
     {
         "filename": "feral_tech2_e.jpg",
+        "sirlins_filename": "0037_gigadon.jpg",
         "name": "Gigadon",
         "starting_zone": "codex",
         "color": "Green",
@@ -376,6 +399,7 @@
     },
     {
         "filename": "feral_tech3.jpg",
+        "sirlins_filename": "0044_moss_ancient.jpg",
         "name": "Moss Ancient",
         "starting_zone": "codex",
         "color": "Green",
@@ -395,6 +419,7 @@
     },
     {
         "filename": "growth_spell_a.jpg",
+        "sirlins_filename": "0018_polymorph_squirrel.jpg",
         "name": "Polymorph: Squirrel",
         "starting_zone": "codex",
         "color": "Green",
@@ -409,6 +434,7 @@
     },
     {
         "filename": "growth_spell_b.jpg",
+        "sirlins_filename": "0019_dinosize.jpg",
         "name": "Dinosize",
         "starting_zone": "codex",
         "color": "Green",
@@ -423,6 +449,7 @@
     },
     {
         "filename": "growth_spell_c.jpg",
+        "sirlins_filename": "0020_spirit_of_the_panda.jpg",
         "name": "Spirit of the Panda",
         "starting_zone": "codex",
         "color": "Green",
@@ -438,6 +465,7 @@
     },
     {
         "filename": "growth_spell_ult.jpg",
+        "sirlins_filename": "0021_stampede.jpg",
         "name": "Stampede",
         "starting_zone": "codex",
         "color": "Green",
@@ -446,12 +474,13 @@
         "subtype": "Buff",
         "cost": 6,
         "target_icon": false,
-        "rules_text_1": "Your units get +3 ATK / +3 armor and overpower this turn. (Excess combat damage they would deal to a patroller hits something else they could attack.)",
+        "rules_text_1": "Your units get +3 ATK / +3 armor this turn. Excess combat damage they would deal to units and heroes hits that opponent's base. (This takes precedence over overpower.)",
         "flavor_text": "Nature stops for no man.",
         "sha1": "4a1ae575c956d6d22b5ff9de7b06a28b8b8fcb7c"
     },
     {
         "filename": "growth_tech1_a.jpg",
+        "sirlins_filename": "0026_galina_glimmer.jpg",
         "name": "Galina Glimmer",
         "starting_zone": "codex",
         "color": "Green",
@@ -469,6 +498,7 @@
     },
     {
         "filename": "growth_tech1_b.jpg",
+        "sirlins_filename": "0027_giant_panda.jpg",
         "name": "Giant Panda",
         "starting_zone": "codex",
         "color": "Green",
@@ -486,6 +516,7 @@
     },
     {
         "filename": "growth_tech2_a.jpg",
+        "sirlins_filename": "0038_artisan_mantis.jpg",
         "name": "Artisan Mantis",
         "starting_zone": "codex",
         "color": "Green",
@@ -503,6 +534,7 @@
     },
     {
         "filename": "growth_tech2_b.jpg",
+        "sirlins_filename": "0039_oversized_rhinoceros.jpg",
         "name": "Oversized Rhinoceros",
         "starting_zone": "codex",
         "color": "Green",
@@ -519,6 +551,7 @@
     },
     {
         "filename": "growth_tech2_c.jpg",
+        "sirlins_filename": "0040_blooming_ancient.jpg",
         "name": "Blooming Ancient",
         "starting_zone": "codex",
         "color": "Green",
@@ -531,12 +564,13 @@
         "ATK": 2,
         "HP": 4,
         "rules_text_1": "Whenever another unit or hero of yours arrives, put a +1/+1 rune on this.",
-        "rules_text_2": "⓪ → Move a +1/+1 rune from Blooming Ancient to another unit.",
+        "rules_text_2": "Remove a +1/+1 rune → Put a +1/+1 rune on another unit.",
         "flavor_text": "Its growth can really get out of control.",
         "sha1": "8f3d543a0729446e61e9fb3213f14db739827652"
     },
     {
         "filename": "growth_tech2_d.jpg",
+        "sirlins_filename": "0041_blooming_elm.jpg",
         "name": "Blooming Elm",
         "starting_zone": "codex",
         "color": "Green",
@@ -546,13 +580,14 @@
         "cost": 3,
         "target_icon": true,
         "tech_level": 2,
-        "HP": 5,
+        "HP": 4,
         "rules_text_1": "Your units and heroes with +1/+1 runes have overpower.",
-        "rules_text_2": "⤵ → Put three +1/+1 runes on a unit or hero.",
+        "rules_text_2": "⤵ → Put three +1/+1 runes on a unit or one on a hero if that unit or hero doesn't have any +1/+1 runes.",
         "sha1": "8e2d0b6ea3ab412f789cd80295e7c23cc36894d1"
     },
     {
         "filename": "growth_tech2_e.jpg",
+        "sirlins_filename": "0042_might_of_leaf_and_claw.jpg",
         "name": "Might of Leaf and Claw",
         "starting_zone": "codex",
         "color": "Green",
@@ -567,6 +602,7 @@
     },
     {
         "filename": "growth_tech3.jpg",
+        "sirlins_filename": "0045_guargum.jpg",
         "name": "Guargum, Eternal Sentinel",
         "starting_zone": "codex",
         "color": "Green",
@@ -603,6 +639,7 @@
     },
     {
         "filename": "green_card_a.jpg",
+        "sirlins_filename": "0000_merfolk_prospector.jpg",
         "name": "Merfolk Prospector",
         "starting_zone": "deck",
         "color": "Green",
@@ -619,6 +656,7 @@
     },
     {
         "filename": "green_card_b.jpg",
+        "sirlins_filename": "0001_tiger_cub.jpg",
         "name": "Tiger Cub",
         "starting_zone": "deck",
         "color": "Green",
@@ -634,6 +672,7 @@
     },
     {
         "filename": "green_card_c.jpg",
+        "sirlins_filename": "0002_young_treant.jpg",
         "name": "Young Treant",
         "starting_zone": "deck",
         "color": "Green",
@@ -651,6 +690,7 @@
     },
     {
         "filename": "green_card_d.jpg",
+        "sirlins_filename": "0003_playful_panda.jpg",
         "name": "Playful Panda",
         "starting_zone": "deck",
         "color": "Green",
@@ -667,6 +707,7 @@
     },
     {
         "filename": "green_card_e.jpg",
+        "sirlins_filename": "0004_ironbark_treant.jpg",
         "name": "Ironbark Treant",
         "starting_zone": "deck",
         "color": "Green",
@@ -683,6 +724,7 @@
     },
     {
         "filename": "green_card_f.jpg",
+        "sirlins_filename": "0005_spore_shambler.jpg",
         "name": "Spore Shambler",
         "starting_zone": "deck",
         "color": "Green",
@@ -694,11 +736,12 @@
         "ATK": 0,
         "HP": 1,
         "rules_text_1": "Arrives: Put two +1/+1 runes on this.",
-        "rules_text_2": "① or ⤵ → Move a +1/+1 rune from Spore Shambler to another unit.",
+        "rules_text_2": "① or ⤵, then remove a +1/+1 rune → Put a +1/+1 rune on another unit.",
         "sha1": "6f4c66569959980d05e01fc52358d9197f1741ba"
     },
     {
         "filename": "green_card_g.jpg",
+        "sirlins_filename": "0006_verdant_tree.jpg",
         "name": "Verdant Tree",
         "starting_zone": "deck",
         "color": "Green",
@@ -715,11 +758,12 @@
     },
     {
         "filename": "green_card_h.jpg",
+        "sirlins_filename": "0007_rich_earth.jpg",
         "name": "Rich Earth",
         "starting_zone": "deck",
         "color": "Green",
         "type": "Upgrade",
-        "cost": 2,
+        "cost": 3,
         "target_icon": false,
         "tech_level": 0,
         "rules_text_1": "You may hire workers for free.",
@@ -728,6 +772,7 @@
     },
     {
         "filename": "green_card_i.jpg",
+        "sirlins_filename": "0008_rampant_growth.jpg",
         "name": "Rampant Growth",
         "starting_zone": "deck",
         "color": "Green",
@@ -741,6 +786,7 @@
     },
     {
         "filename": "green_card_j.jpg",
+        "sirlins_filename": "0009_forests_favor.jpg",
         "name": "Forest's Favor",
         "starting_zone": "deck",
         "color": "Green",
@@ -753,6 +799,7 @@
         "sha1": "4fad33a2d072dcd5a54af504e20797a18b428ae0"
     },
     {
+        "filename": "hunter_token.jpg",
         "name": "Hunter",
         "starting_zone": "trash",
         "color": "Green",
@@ -766,6 +813,7 @@
         "rules_text_1": "Anti-air"
     },
     {
+        "filename": "beast_token.jpg",
         "name": "Beast",
         "starting_zone": "trash",
         "color": "Green",
@@ -778,6 +826,7 @@
         "HP": 4
     },
     {
+        "filename": "frog_token.jpg",
         "name": "Frog",
         "starting_zone": "trash",
         "color": "Green",
@@ -790,6 +839,7 @@
         "HP": 1
     },
     {
+        "filename": "squirrel_token.jpg",
         "name": "Squirrel",
         "starting_zone": "trash",
         "color": "Green",
@@ -802,6 +852,7 @@
         "HP": 1
     },
     {
+        "filename": "wisp_token.jpg",
         "name": "Wisp",
         "starting_zone": "trash",
         "color": "Green",

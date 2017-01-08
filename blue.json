@@ -1,6 +1,7 @@
 [
     {
         "filename": "law_spell_a.jpg",
+        "sirlins_filename": "0011_injunction.jpg",
         "name": "Injunction",
         "starting_zone": "codex",
         "color": "Blue",
@@ -9,11 +10,12 @@
         "subtype": "Debuff",
         "cost": 3,
         "target_icon": false,
-        "rules_text_1": "Disable a level I or II tech building and all units it could produce. (Exhaust the units, they don't ready during their next ready step, and sideline them if they were patrolling. That building isn't operational next turn.)",
+        "rules_text_1": "Disable a level I or II tech building and all of that player's units of the same tech level. (Exhaust the units, they don't ready during their next ready step, and sideline them if they were patrolling. That building isn't operational next turn.)",
         "sha1": "fdae1f6dd359a86a9bfea1e81f0245273a7ada9a"
     },
     {
         "filename": "law_spell_b.jpg",
+        "sirlins_filename": "0012_community_service.jpg",
         "name": "Community Service",
         "starting_zone": "codex",
         "color": "Blue",
@@ -27,6 +29,7 @@
     },
     {
         "filename": "law_spell_c.jpg",
+        "sirlins_filename": "0010_jurisdiction.jpg",
         "name": "Jurisdiction",
         "starting_zone": "codex",
         "color": "Blue",
@@ -39,6 +42,7 @@
     },
     {
         "filename": "law_spell_ult.jpg",
+        "sirlins_filename": "0013_judgment_day.jpg",
         "name": "Judgment Day",
         "starting_zone": "codex",
         "color": "Blue",
@@ -53,6 +57,7 @@
     },
     {
         "filename": "law_tech1_a.jpg",
+        "sirlins_filename": "0022_tax_collector.jpg",
         "name": "Tax Collector",
         "starting_zone": "codex",
         "color": "Blue",
@@ -69,6 +74,7 @@
     },
     {
         "filename": "law_tech1_b.jpg",
+        "sirlins_filename": "0023_scribe.jpg",
         "name": "Scribe",
         "starting_zone": "codex",
         "color": "Blue",
@@ -85,6 +91,7 @@
     },
     {
         "filename": "law_tech2_a.jpg",
+        "sirlins_filename": "0028_drill_sergeant.jpg",
         "name": "Drill Sergeant",
         "starting_zone": "codex",
         "color": "Blue",
@@ -97,11 +104,12 @@
         "ATK": 3,
         "HP": 3,
         "rules_text_1": "Whenever you play a unit from your hand, put a +1/+1 rune on this.",
-        "rules_text_2": "⓪ → Move a +1/+1 rune from Drill Sergeant to another unit.",
+        "rules_text_2": "Remove a +1/+1 rune → Put a +1/+1 rune on another unit.",
         "sha1": "c0be1e7f3e921d37336f786ddd6271f404399e1e"
     },
     {
         "filename": "law_tech2_b.jpg",
+        "sirlins_filename": "0029_flagstone_spy.jpg",
         "name": "Flagstone Spy",
         "starting_zone": "codex",
         "color": "Blue",
@@ -119,6 +127,7 @@
     },
     {
         "filename": "law_tech2_c.jpg",
+        "sirlins_filename": "0030_debilitator_alpha.jpg",
         "name": "Debilitator Alpha",
         "starting_zone": "codex",
         "color": "Blue",
@@ -135,6 +144,7 @@
     },
     {
         "filename": "law_tech2_d.jpg",
+        "sirlins_filename": "0031_air_hammer.jpg",
         "name": "Air Hammer",
         "starting_zone": "codex",
         "color": "Blue",
@@ -152,6 +162,7 @@
     },
     {
         "filename": "law_tech2_e.jpg",
+        "sirlins_filename": "0032_flagstone_garrison.jpg",
         "name": "Flagstone Garrison",
         "starting_zone": "codex",
         "color": "Blue",
@@ -166,6 +177,7 @@
     },
     {
         "filename": "law_tech3.jpg",
+        "sirlins_filename": "0043_lawbringer_gryphon.jpg",
         "name": "Lawbringer Gryphon",
         "starting_zone": "codex",
         "color": "Blue",
@@ -184,6 +196,7 @@
     },
     {
         "filename": "peace_spell_a.jpg",
+        "sirlins_filename": "0014_boot_camp.jpg",
         "name": "Boot Camp",
         "starting_zone": "codex",
         "color": "Blue",
@@ -198,6 +211,7 @@
     },
     {
         "filename": "peace_spell_b.jpg",
+        "sirlins_filename": "0015_elite_training.jpg",
         "name": "Elite Training",
         "starting_zone": "codex",
         "color": "Blue",
@@ -211,6 +225,7 @@
     },
     {
         "filename": "peace_spell_c.jpg",
+        "sirlins_filename": "0016_generals_hammer.jpg",
         "name": "General's Hammer",
         "starting_zone": "codex",
         "color": "Blue",
@@ -223,6 +238,7 @@
     },
     {
         "filename": "peace_spell_ult.jpg",
+        "sirlins_filename": "0017_the_art_of_war.jpg",
         "name": "The Art of War",
         "starting_zone": "codex",
         "color": "Blue",
@@ -236,6 +252,7 @@
     },
     {
         "filename": "peace_tech1_a.jpg",
+        "sirlins_filename": "0024_overeager_cadet.jpg",
         "name": "Overeager Cadet",
         "starting_zone": "codex",
         "color": "Blue",
@@ -251,6 +268,7 @@
     },
     {
         "filename": "peace_tech1_b.jpg",
+        "sirlins_filename": "0025_brave_knight.jpg",
         "name": "Brave Knight",
         "starting_zone": "codex",
         "color": "Blue",
@@ -262,11 +280,13 @@
         "tech_level": 1,
         "ATK": 3,
         "HP": 3,
-        "rules_text_1": "Whenever Brave Knight would die from combat damage, return him to your hand instead.",
+        "rules_text_1": "Readiness (Doesn't exhaust to attack, but can only attack once per turn.)",
+        "rules_text_2": "Whenever Brave Knight would die from combat damage, return him to his owner's hand instead.",
         "sha1": "ed3fd1a329369296dc6ac7e6719d16999fd9dd2a"
     },
     {
         "filename": "peace_tech2_a.jpg",
+        "sirlins_filename": "0033_guardian_of_the_gates.jpg",
         "name": "Guardian of the Gates",
         "starting_zone": "codex",
         "color": "Blue",
@@ -284,6 +304,7 @@
     },
     {
         "filename": "peace_tech2_b.jpg",
+        "sirlins_filename": "0034_insurance_agent.jpg",
         "name": "Insurance Agent",
         "starting_zone": "codex",
         "color": "Blue",
@@ -300,6 +321,7 @@
     },
     {
         "filename": "peace_tech2_c.jpg",
+        "sirlins_filename": "0035_justice_juggernaut.jpg",
         "name": "Justice Juggernaut",
         "starting_zone": "codex",
         "color": "Blue",
@@ -312,11 +334,12 @@
         "ATK": 4,
         "HP": 6,
         "rules_text_1": "Unstoppable but can't patrol. (Can ignore patrollers when attacking.)",
-        "rules_text_2": "Two Lives (If this would die, heal all damage on it and put a crumbling rune on it. While it has a crumbling rune, it can really die.)",
+        "rules_text_2": "Two Lives (If this would die, heal all damage on it and put a crumbling rune on it instead. While it has a crumbling rune, it can really die.)",
         "sha1": "414751c0d395a0b884f59e09ca4bd5f311cbb72d"
     },
     {
         "filename": "peace_tech2_d.jpg",
+        "sirlins_filename": "0036_arresting_constable.jpg",
         "name": "Arresting Constable",
         "starting_zone": "codex",
         "color": "Blue",
@@ -333,6 +356,7 @@
     },
     {
         "filename": "peace_tech2_e.jpg",
+        "sirlins_filename": "0037_censorship_council.jpg",
         "name": "Censorship Council",
         "starting_zone": "codex",
         "color": "Blue",
@@ -347,6 +371,7 @@
     },
     {
         "filename": "peace_tech3.jpg",
+        "sirlins_filename": "0044_patriot_gryphon.jpg",
         "name": "Patriot Gryphon",
         "starting_zone": "codex",
         "color": "Blue",
@@ -365,6 +390,7 @@
     },
     {
         "filename": "truth_spell_a.jpg",
+        "sirlins_filename": "0018_free_speech.jpg",
         "name": "Free Speech",
         "starting_zone": "codex",
         "color": "Blue",
@@ -378,6 +404,7 @@
     },
     {
         "filename": "truth_spell_b.jpg",
+        "sirlins_filename": "0019_hallucination.jpg",
         "name": "Hallucination",
         "starting_zone": "codex",
         "color": "Blue",
@@ -391,6 +418,7 @@
     },
     {
         "filename": "truth_spell_c.jpg",
+        "sirlins_filename": "0020_dreamscape.jpg",
         "name": "Dreamscape",
         "starting_zone": "codex",
         "color": "Blue",
@@ -405,6 +433,7 @@
     },
     {
         "filename": "truth_spell_ult.jpg",
+        "sirlins_filename": "0021_mind_control.jpg",
         "name": "Mind Control",
         "starting_zone": "codex",
         "color": "Blue",
@@ -418,6 +447,7 @@
     },
     {
         "filename": "truth_tech1_a.jpg",
+        "sirlins_filename": "0026_spectral_flagbearer.jpg",
         "name": "Spectral Flagbearer",
         "starting_zone": "codex",
         "color": "Blue",
@@ -435,6 +465,7 @@
     },
     {
         "filename": "truth_tech1_b.jpg",
+        "sirlins_filename": "0027_spectral_hound.jpg",
         "name": "Spectral Hound",
         "starting_zone": "codex",
         "color": "Blue",
@@ -451,6 +482,7 @@
     },
     {
         "filename": "truth_tech2_a.jpg",
+        "sirlins_filename": "0038_macciatus.jpg",
         "name": "Macciatus, The Whisperer",
         "starting_zone": "codex",
         "color": "Blue",
@@ -467,6 +499,7 @@
     },
     {
         "filename": "truth_tech2_b.jpg",
+        "sirlins_filename": "0039_reteller_of_truths.jpg",
         "name": "Reteller of Truths",
         "starting_zone": "codex",
         "color": "Blue",
@@ -479,11 +512,12 @@
         "ATK": 3,
         "HP": 3,
         "rules_text_1": "(Illusions die when ◎ by spells or abilities.)",
-        "rules_text_2": "The first two times each turn one of your non-token Illusion units dies (including this one), return it to your hand.",
+        "rules_text_2": "The first two times each turn one of your non-token Illusion units dies (including this one), return it to its owner's hand.",
         "sha1": "397988179c7d2e17df5cc1ff25b02a13dc111211"
     },
     {
         "filename": "truth_tech2_c.jpg",
+        "sirlins_filename": "0040_spectral_tiger.jpg",
         "name": "Spectral Tiger",
         "starting_zone": "codex",
         "color": "Blue",
@@ -500,6 +534,7 @@
     },
     {
         "filename": "truth_tech2_d.jpg",
+        "sirlins_filename": "0041_spectral_roc.jpg",
         "name": "Spectral Roc",
         "starting_zone": "codex",
         "color": "Blue",
@@ -517,6 +552,7 @@
     },
     {
         "filename": "truth_tech2_e.jpg",
+        "sirlins_filename": "0042_eyes_of_the_chancellor.jpg",
         "name": "Eyes of the Chancellor",
         "starting_zone": "codex",
         "color": "Blue",
@@ -532,6 +568,7 @@
     },
     {
         "filename": "truth_tech3.jpg",
+        "sirlins_filename": "0045_liberty_gryphon.jpg",
         "name": "Liberty Gryphon",
         "starting_zone": "codex",
         "color": "Blue",
@@ -570,6 +607,7 @@
     },
     {
         "filename": "blue_card_a.jpg",
+        "sirlins_filename": "0000_building_inspector.jpg",
         "name": "Building Inspector",
         "starting_zone": "deck",
         "color": "Blue",
@@ -585,6 +623,7 @@
     },
     {
         "filename": "blue_card_b.jpg",
+        "sirlins_filename": "0001_spectral_aven.jpg",
         "name": "Spectral Aven",
         "starting_zone": "deck",
         "color": "Blue",
@@ -601,6 +640,7 @@
     },
     {
         "filename": "blue_card_c.jpg",
+        "sirlins_filename": "0002_bluecoat_musketeer.jpg",
         "name": "Bluecoat Musketeer",
         "starting_zone": "deck",
         "color": "Blue",
@@ -611,11 +651,13 @@
         "tech_level": 0,
         "ATK": 1,
         "HP": 2,
-        "rules_text_1": "Sparkshot (When attacking a patroller, deals 1 damage to an adjacent patroller.)",
+        "rules_text_1": "While this has exactly 1 ATK, it has long-range.",
+        "rules_text_2": "(Defenders without long-range deal no damage to this when it attacks.)",
         "sha1": "afae764b60e726f35dac91299826cbe7c5205a0c"
     },
     {
         "filename": "blue_card_d.jpg",
+        "sirlins_filename": "0003_traffic_director.jpg",
         "name": "Traffic Director",
         "starting_zone": "deck",
         "color": "Blue",
@@ -632,6 +674,7 @@
     },
     {
         "filename": "blue_card_e.jpg",
+        "sirlins_filename": "0004_porkhand_magistrate.jpg",
         "name": "Porkhand Magistrate",
         "starting_zone": "deck",
         "color": "Blue",
@@ -641,12 +684,13 @@
         "target_icon": true,
         "tech_level": 0,
         "ATK": 2,
-        "HP": 2,
+        "HP": 3,
         "rules_text_1": "①, ⤵ → Disable a unit or hero. Its controller draws a card. (Exhaust it and it doesn't ready during its next ready step. Sideline it if it was patrolling.)",
         "sha1": "bb41eb8c58e38a575d4e7caa4118db0c58c69de4"
     },
     {
         "filename": "blue_card_f.jpg",
+        "sirlins_filename": "0005_reputable_newsman.jpg",
         "name": "Reputable Newsman",
         "starting_zone": "deck",
         "color": "Blue",
@@ -662,6 +706,7 @@
     },
     {
         "filename": "blue_card_g.jpg",
+        "sirlins_filename": "0006_jail.jpg",
         "name": "Jail",
         "starting_zone": "deck",
         "color": "Blue",
@@ -670,11 +715,12 @@
         "target_icon": false,
         "tech_level": 0,
         "HP": 3,
-        "rules_text_1": "Opposing units played from hand go to jail instead of arriving. When a unit enters jail, any unit already there is released and arrives in play. (Jailed units aren't in play. They're trashed if Jail is destroyed.)",
+        "rules_text_1": "Opposing units played from hand go to jail instead of arriving. When a unit enters jail, any unit already there is released and arrives in play. (Jailed units aren't in play. They're discarded if Jail is destroyed.)",
         "sha1": "d00db1f80f4d02b7e983a5e103846b6af9b0fb19"
     },
     {
         "filename": "blue_card_h.jpg",
+        "sirlins_filename": "0007_lawful_search.jpg",
         "name": "Lawful Search",
         "starting_zone": "deck",
         "color": "Blue",
@@ -686,6 +732,7 @@
     },
     {
         "filename": "blue_card_i.jpg",
+        "sirlins_filename": "0008_arrest.jpg",
         "name": "Arrest",
         "starting_zone": "deck",
         "color": "Blue",
@@ -698,6 +745,7 @@
     },
     {
         "filename": "blue_card_j.jpg",
+        "sirlins_filename": "0009_manufactured_truth.jpg",
         "name": "Manufactured Truth",
         "starting_zone": "deck",
         "color": "Blue",
@@ -708,6 +756,7 @@
         "sha1": "8d36ee2d2e0692d8c42b20c055de23a37d615d65"
     },
     {
+        "filename": "soldier_token.jpg",
         "name": "Soldier",
         "starting_zone": "trash",
         "color": "Blue",
@@ -721,6 +770,7 @@
         "rules_text_1": "Sparkshot"
     },
     {
+        "filename": "mirror_token.jpg",
         "name": "Mirror Illusion",
         "starting_zone": "trash",
         "color": "Blue",
@@ -733,6 +783,7 @@
         "HP": 1
     },
     {
+        "filename": "water_elemental_token.jpg",
         "name": "Water Elemental",
         "starting_zone": "trash",
         "color": "Blue",
